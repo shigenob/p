@@ -25,13 +25,13 @@
                 result = "大吉";
             } else if (colour === "オレンジ" && number === 2) {
                 result = "中吉";
-            } else if (colour === "オレンジ" && number === 3) {中吉
+            } else if (colour === "オレンジ" && number === 3) {
                 result = "末吉";
-        　　} else if (colour === "金" && number === 3) {
+        　　} else if (colour === "金" && number === 0) {
                 result = "末吉";
-　　　　　　 } else if (colour === "金" && number === 3) {
+　　　　　　 } else if (colour === "金" && number === 1) {
                 result = "中吉";
-        　  } else if (colour === "金" && number === 3) {
+        　  } else if (colour === "金" && number === 2) {
                 result = "大吉";
         　　 } else if (colour === "金" && number === 3) {
                 result = "大凶";
