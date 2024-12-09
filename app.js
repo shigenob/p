@@ -1,39 +1,25 @@
-        function checkFortune() {
-            var colour = document.getElementById('colour-select').value;
-            var number = parseInt(document.getElementById('number-input').value, 10);
-            var result = "大凶"; // デフォルトの値
+        function play() {
+            var one = Math.floor(Math.random()*5);
+            var image_name
+           
+                
+                if (one == 0) {
+                image_mame = "daikiti.png";
+            } else if (one == 1) {
+               image_mame  = "chuukichi.png";
+            } else if (one == 2) {
+               image_mame  = "shoukichi.png";
+            } else if (one == 3) {
+               image_mame  = "suekichi.png";  
+            } else   {
+               image_mame  = "kyou.png";
 
-            if (colour === "黒" && number === 0) {
-                result = "大吉";
-            } else if (colour === "黒" && number === 1) {
-                result = "中吉";
-            } else if (colour === "黒" && number === 2) {
-                result = "大凶";
-            } else if (colour === "黒" && number === 3) {
-                result = "末吉";  
-            } else if (colour === "白" && number === 0) {
-                result = "中吉";
-            } else if (colour === "白" && number === 1) {
-                result = "大吉";
-            } else if (colour === "白" && number === 2) {
-                result = "大凶";
-            } else if (colour === "白" && number === 3) {
-                result = "末吉";
-            } else if (colour === "オレンジ" && number === 0) {
-                result = "中吉";
-            } else if (colour === "オレンジ" && number === 1) {
-                result = "大吉";
-            } else if (colour === "オレンジ" && number === 2) {
-                result = "大凶";
-            } else if (colour === "オレンジ" && number === 3) {
-                result = "末吉";
-        　　} else if (colour === "金" && number === 0) {
-                result = "末吉";
-　　　　　　 } else if (colour === "金" && number === 1) {
-                result = "中吉";
-        　  } else if (colour === "金" && number === 2) {
-                result = "大吉";
-        　　 } else if (colour === "金" && number === 3) {
-                result = "大凶";
-            document.getElementById('result-output').innerText = "あなたの今週の運勢は【" + result + "】です";
-        }
+
+
+
+                alert("おみくじが出たぞ！結果は如何に！？");
+                    
+            document.getElementById('omikuji').src = "images/" + image_name;
+             document.getElementById('playBtn').innerHTML = "やり直す" ;
+                
+                }
