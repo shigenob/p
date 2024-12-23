@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ビューポート設定を追加 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>くじ引き</title>
+<style>
+       body {
+           font-family: Arial, sans-serif;
+           text-align: center;
+           margin: 20px;
+       }
+       .container {
+           margin-top: 20px;
+       }
+       #omikuji {
+           width: 300px; /* 画像のサイズを調整 */
+       }
+</style>
 </head>
 <body>
-    
-    <h1>今年の運勢</h1>
-
-    <div class="container">
-        
-    
-<img src="images/omikuji-box.png" id="omikuji">
-<button id="playBtn" onclick="play()"> おみくじをひく</button>
-                                                  
-        
-    
-
-    
-
+<h1>今年の運勢</h1>
+<div class="container">
+<img src="images/omikuji-box.png" id="omikuji" alt="おみくじボックス">
+<button id="playBtn" onclick="play()">おみくじをひく</button>
+</div>
+<script>
+       function play() {
+           const fortunes = [
+               "大吉!",
+               "吉!",
+               "中吉!",
+               "小吉!",
+               "凶!"
+           ];
+           const randomIndex = Math.floor(Math.random() * fortunes.length);
+           alert(fortunes[randomIndex]);
+       }
+</script>
 </body>
 </html>
