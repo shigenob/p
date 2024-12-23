@@ -1,21 +1,20 @@
         function play() {
-            var one = Math.floor(Math.random()*5);
-            console.log(one);
+            var no = Math.floor(Math.random()*5);
+            console.log(no);
                 var image_name
            
                 
-                if (one == 0) {
+                if (no == 0) {
                 image_mame = "daikiti.png";
-            } else if (one == 1) {
+            } else if (no == 1) {
                image_mame  = "chuukichi.png";
-            } else if (one == 2) {
+            } else if (no == 2) {
                image_mame  = "shoukichi.png";
-            } else if (one == 3) {
+            } else if (no == 3) {
                image_mame  = "suekichi.png";  
             } else   {
                image_mame  = "kyou.png";
 
-                } 
                 console.log(image_name);
 
 
