@@ -1,6 +1,7 @@
         function play() {
             var one = Math.floor(Math.random()*5);
-            var image_name
+            console.log(one);
+                var image_name
            
                 
                 if (one == 0) {
@@ -14,7 +15,8 @@
             } else   {
                image_mame  = "kyou.png";
 
-
+                } 
+                console.log(image_name);
 
 
                 alert("おみくじが出たぞ！結果は如何に！？");
