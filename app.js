@@ -24,3 +24,16 @@ function play() {
     document.getElementById('omikuji').src = "images/" + image_name;
     document.getElementById('playBtn').innerHTML = "やり直す";
 }
+   const fortunes = [
+       { text: "大吉!", description: "最高の運勢です！" },
+       { text: "吉!", description: "良い運勢です！" },
+       { text: "中吉!", description: "まずまずの運勢です。" },
+       { text: "小吉!", description: "悪くはありません。" },
+       { text: "凶!", description: "注意が必要です。" }
+   ];
+
+   function play() {
+       const randomIndex = Math.floor(Math.random() * fortunes.length);
+       alert(fortunes[randomIndex].text + "\n" + fortunes[randomIndex].description);
+   }
+
