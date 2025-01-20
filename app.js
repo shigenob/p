@@ -12,7 +12,7 @@ function play() {
         image_name = "shoukichi.png";
     } else if (no == 3) {
         image_name = "kichi.png";
-    } else if   (no == 4) {
+    } else if (no == 4) {
         image_name = "kyou.png";
     } else  {
         image_name = "suekiti.pag";
