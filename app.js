@@ -11,10 +11,11 @@ function play() {
     } else if (no == 2) {
         image_name = "shoukichi.png";
     } else if (no == 3) {
-        image_name = "suekichi.png";
-    } else {
+        image_name = "kichi.png";
+    } else if   (no == 4) {
         image_name = "kyou.png";
-    }
+    } else  {
+        images_name = "suekiti.pag";
     
     console.log(image_name);
 
@@ -30,6 +31,7 @@ function play() {
        { text: "中吉!", description: "まずまずの運勢です。" },
        { text: "小吉!", description: "悪くはありません。" },
        { text: "凶!", description: "注意が必要です。" }
+       { text: "末吉!", description: "少し危機感を持とう。" }
    ];
 
    function play() {
