@@ -5,17 +5,17 @@ function play() {
     
     // ランダム番号に基づいて正しい画像ファイル名を割り当てる
     if (no == 0) {
-        image_name = "daikiti.png";
+        image_name = "daikiti.jpg";
     } else if (no == 1) {
-        image_name = "chuukichi.png";
+        image_name = "chuukichi.jpg";
     } else if (no == 2) {
-        image_name = "shoukichi.png";
+        image_name = "shoukichi.jpg";
     } else if (no == 3) {
-        image_name = "kichi.png";
+        image_name = "kichi.jpg";
     } else if (no == 4) {
-        image_name = "kyou.png";
+        image_name = "kyou.jpg";
     } else  {
-        image_name = "suekiti.pag";
+        image_name = "suekiti.jpg";
     
     console.log(image_name);
 
