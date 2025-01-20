@@ -2,7 +2,7 @@ root {
     --primary-color: #4CAF50; /* ボタンの基本色 */
     --hover-color: #45a049; /* ホバー時の色 */
 }
-.title {
+.h1 {
 border: solid 1px black;
 border: double 4px black;
 }
