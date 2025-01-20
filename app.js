@@ -26,8 +26,5 @@ function play() {
     document.getElementById('playBtn').innerHTML = "やり直す";
 }
 
-   function play() {
-       const randomIndex = Math.floor(Math.random() * fortunes.length);
-       alert(fortunes[randomIndex].text + "\n" + fortunes[randomIndex].description);
-   }
+
 
