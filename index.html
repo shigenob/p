@@ -25,7 +25,32 @@
 <img src="images/omikuji-box.jpg" id="omikuji" >
 <button id="playBtn" onclick="play()">おみくじをひく</button>
 </div>
+<script>
+       
+const fortunes = [
 
+       { text: "大吉!", description: "最高の運勢です！" },
+
+       { text: "吉!", description: "良い運勢です！" },
+
+       { text: "中吉!", description: "まずまずの運勢です。" },
+
+       { text: "小吉!", description: "悪くはありません。" },
+
+       { text: "凶!", description: "注意が必要です。" },
+
+       { text: "末吉!", description: "少し危機感を持とう。" }
+
+   ];
+ 
+   function play() {
+
+       const randomIndex = Math.floor(Math.random() * fortunes.length);
+
+       alert(fortunes[randomIndex].text + "\n" + fortunes[randomIndex].description);
+
+   }
+  
 <br><h2>おみくじの概要</h2></br>
 大吉・中吉・小吉・吉・末吉・凶
 </body>
