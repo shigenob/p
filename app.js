@@ -26,5 +26,18 @@ function play() {
     document.getElementById('playBtn').innerHTML = "やり直す";
 }
 
-
+<script>
+       function play() {
+           const fortunes = [
+               "大吉!"+"貴方は最高にいけてます！",
+               "吉!"+"良い運勢です！",
+               "中吉!"+"普通だなぁ",
+               "小吉!"+"もうちょい日頃の行いを見直そ！",
+               "凶!"+"うん！残念！",
+               "末吉！"+"貴方の今後の行いで上がるか下がるかの運命が変わるでしょう。",
+           ];
+           const randomIndex = Math.floor(Math.random() * fortunes.length);
+           alert(fortunes[randomIndex]);
+       }
+</script>
 
