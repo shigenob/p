@@ -24,20 +24,37 @@ function play() {
     // 正しい画像のソースとボタンのテキストを設定する
     document.getElementById('omikuji').src = "images/" + image_name;
     document.getElementById('playBtn').innerHTML = "やり直す";
-}
 
-<script>
-       function play() {
-           const fortunes = [
-               "大吉!"+"貴方は最高にいけてます！",
-               "吉!"+"良い運勢です！",
-               "中吉!"+"普通だなぁ",
-               "小吉!"+"もうちょい日頃の行いを見直そ！",
-               "凶!"+"うん！残念！",
-               "末吉！"+"貴方の今後の行いで上がるか下がるかの運命が変わるでしょう。",
-           ];
-           const randomIndex = Math.floor(Math.random() * fortunes.length);
-           alert(fortunes[randomIndex]);
-       }
-</script>
+    }
 
+const fortunes = [
+
+       { text: "大吉!", description: "最高の運勢です！" },
+
+       { text: "吉!", description: "良い運勢です！" },
+
+       { text: "中吉!", description: "まずまずの運勢です。" },
+
+       { text: "小吉!", description: "悪くはありません。" },
+
+       { text: "凶!", description: "注意が必要です。" },
+
+       { text: "末吉!", description: "少し危機感を持とう。" }
+
+   ];
+ 
+   function play() {
+
+       const randomIndex = Math.floor(Math.random() * fortunes.length);
+
+       alert(fortunes[randomIndex].text + "\n" + fortunes[randomIndex].description);
+
+   }
+ 
+
+
+
+
+
+
+    
